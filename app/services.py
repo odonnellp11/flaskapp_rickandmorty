@@ -9,8 +9,8 @@ def char_image():
     else:
         return response.status_code
    
-    chars = {}
+    chars = []
     for name in data:
         if data[name]:
-            chars[name] = data[name]
+            chars.append((name, data[name]))
     return chars

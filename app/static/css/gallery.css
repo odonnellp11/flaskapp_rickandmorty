@@ -6,31 +6,34 @@
     grid-auto-flow: row;
     grid-template-areas:
       ". api-gallery-tittle ."
-      "call1 call2 call3"
-      "call4 call5 call6"
-      "call7 call8 call9";
+      "c0 c1 c2"
+      "c3 c4 c5"
+      "c6 c7 c8";
   }
   
-  .api-gallery-tittle { 
-      grid-area: api-gallery-tittle;
-      text-align: center;
-     }
+  
     
-  .call1 { grid-area: call1; }
+  .c0 { grid-area: c0; }
+
+  .c1 { grid-area: c1; }
   
-  .call2 { grid-area: call2; }
+  .c2 { grid-area: c2; }
   
-  .call3 { grid-area: call3; }
+  .c3 { grid-area: c3; }
   
-  .call4 { grid-area: call4; }
+  .c4 { grid-area: c4; }
   
-  .call5 { grid-area: call5; }
+  .c5 { grid-area: c5; }
   
-  .call6 { grid-area: call6; }
+  .c6 { grid-area: c6; }
   
-  .call7 { grid-area: call7; }
+  .c7 { grid-area: c7; }
   
-  .call8 { grid-area: call8; }
+  .c8 { grid-area: c8; }
   
-  .call9 { grid-area: call9; }
+  .c0 { grid-area: c0; }
   
+  .api-gallery-tittle { 
+    grid-area: api-gallery-tittle;
+    text-align: center;
+   }

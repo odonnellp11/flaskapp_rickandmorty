@@ -1,7 +1,7 @@
 from app import app
 
 from flask import render_template
-
+from .services import char_image
 @app.route('/')
 def home():
     headline = 'welcome to the many worlds or Rick & Morty'
@@ -14,7 +14,9 @@ def characters():
 
 @app.route('/rick')
 def Ricks():
-    return render_template('/rick.html')
+    chars = char_image()
+    print(chars)
+    return render_template('/rick.html', chars=chars)
 
 @app.route('/morty')
 def mortys():
