@@ -1,0 +1,16 @@
+.hero-image{
+    background-image:url("https://i.pinimg.com/originals/5b/66/7d/5b667d877265b876259a1633403b0ec9.jpg");
+    height:500px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    margin-top: 0px;
+}
+.hero-text{
+    color: rgba(96, 235, 119, 0.377);
+    font-size: 100px;
+    font-family: fantasy ;
+    text-align:center;
+    transform:translate();
+}
