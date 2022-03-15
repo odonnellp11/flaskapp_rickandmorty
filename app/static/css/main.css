@@ -1,3 +1,6 @@
+body{
+    background-color: lawngreen;
+}
 .hero-image{
     background-image:url("https://i.pinimg.com/originals/5b/66/7d/5b667d877265b876259a1633403b0ec9.jpg");
     height:500px;
@@ -7,6 +10,7 @@
     position:relative;
     margin-top: 0px;
 }
+
 .hero-text{
     color: rgba(96, 235, 119, 0.377);
     font-size: 100px;
@@ -14,3 +18,27 @@
     text-align:center;
     transform:translate();
 }
+
+footer hr{
+    margin-top: 0px;
+    height: 1px;
+    border: 0px;
+    box-shadow: inset 0 12px -12px white;
+ }
+ 
+ footer{
+    width: 100%;
+    background-color: black;
+    height: 5vh;
+    margin-top: 10px;
+ }
+ 
+ footer div{
+    text-align: center;
+    color: white;
+ }
+
+ .col{
+    text-align:center; 
+    margin-top: 25px;
+ }

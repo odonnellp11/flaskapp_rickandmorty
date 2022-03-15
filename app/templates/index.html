@@ -1,3 +1,10 @@
 {% extends 'components/layout.html'%}
 
-<h1>rick and morty home page add img and show/site decriptions</h1>
+{% block rightcol %}
+<h1>{{ headline }}</h1>
+<dd>{{ description }}</dd>
+{% endblock rightcol %}
+
+{% block leftcol %}
+<img class="img-fluid" src="https://i.guim.co.uk/img/media/b563ac5db4b4a4e1197c586bbca3edebca9173cd/0_12_3307_1985/master/3307.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=1e7782501ddde0a9803bed9791f4eea1" alt="rick&morty">
+{% endblock leftcol %}
