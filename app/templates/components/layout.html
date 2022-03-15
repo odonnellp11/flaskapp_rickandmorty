@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../../static/css/main.css">
+    {% block css %}
+    {% endblock css %}
 </head>
   <body>
     <div class="hero-image">
@@ -33,15 +35,9 @@
         </div>
       </nav>
       <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-               {% block rightcol %}
-               {% endblock rightcol %}
-            </div>
-            <div class="col">
-               {% block leftcol %}
-               {% endblock leftcol %}
-            </div>
+          <div class="row mt-2">
+            {% block content %}
+            {% endblock content %}
           </div>
       </div>
       <footer>
