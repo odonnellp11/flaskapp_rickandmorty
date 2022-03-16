@@ -1,7 +1,14 @@
+import requests as r
 from app import app
-
-from flask import render_template
+from flask import render_template, request 
+from .forms import DriverForm
 from .services import char_image
+from flask_login import login_required
+from random import choice
+
+
+
+
 @app.route('/')
 def home():
     headline = 'welcome to the many worlds or Rick & Morty'
