@@ -1,6 +1,6 @@
 import requests as r
 from app import app
-from flask import render_template, 
+from flask import render_template
 from .services import char_image
 
 
