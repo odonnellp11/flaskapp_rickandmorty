@@ -8,4 +8,4 @@ class Config:
     FLASK_APP = os.environ.get('FLASK_APP')
     FLASK_ENV = os.environ.get('development')
     SECRET_KEY = os.environ.get('secret')
-    SQLALCHEMY_TRACK_MODIFICATIONS=False
+    
