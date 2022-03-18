@@ -1,13 +1,12 @@
 {% extends 'components/layout.html' %}
 
-{% block css%}
+{% block css %}
 <link rel="stylesheet" href="../static/css/gallery.css">
 {% endblock css %}
 
 {% block content %}
-
 <div class="container">
-    <div class="apigallerytittle">Rick Sanchez</div>
+    <div class="apigallerytittle, justify-content-center">Rick Sanchez</div>
     {% for rick in ricks %}
         <div class="call1"><img class="img_fluid" src="{{ricks[rick]}}" alt="{{rick}}"></div>
     {% endfor %}
