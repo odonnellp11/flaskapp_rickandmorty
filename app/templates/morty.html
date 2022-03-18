@@ -1,9 +1,17 @@
 {% extends 'components/layout.html'%}
 
-{% block rightcol %}
+{% block css %}
+<link rel="stylesheet" href="../static/css/gallery.css">
+{% endblock css %}
 
-{% endblock rightcol %}
+    
 
-{% block leftcol %}
-
-{% endblock leftcol %}
+{% block content %}
+<div class="container">
+    {% for i in range(9) %}
+    <div class="call{{i}}"><img class="img_fluid" src="{{mortys[i][1]}}" alt="{{mortys[1][0]}}"></div>
+    <div class="call{{i}}">{{mortys_name[i][1]}}</div>
+    {% endfor %}
+    <div class=" character-gallery">Morty</div>
+</div>
+  {% endblock content %}

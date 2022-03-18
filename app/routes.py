@@ -2,6 +2,11 @@ import requests as r
 from app import app
 from flask import render_template
 from .services import get_ricks_image 
+from .services import get_ricks_name
+from .services import get_mortys_image
+from .services import get_mortys_name
+from .services import get_chars_image
+from .services import get_chars_name
 
 
 
@@ -16,14 +21,21 @@ def home():
 
 @app.route('/characters')
 def characters():
-    return render_template('char.html')
+    chars_name = get_chars_name()
+    chars = get_chars_image()
+    print(chars)
+    return render_template('/chars.html', chars=chars, chars_name=chars_name)
 
 @app.route('/rick')
 def Ricks():
+    ricks_name = get_ricks_name()
     ricks = get_ricks_image()
-    print(len(ricks))
-    return render_template('/rick.html', ricks=ricks)
+    print(ricks)
+    return render_template('/rick.html', ricks=ricks, ricks_name=ricks_name)
 
 @app.route('/morty')
 def mortys():
-    return render_template('/morty.html')
+    mortys_name = get_mortys_name()
+    mortys = get_mortys_image()
+    print(mortys)
+    return render_template('/morty.html', mortys=mortys, mortys_name=mortys_name )

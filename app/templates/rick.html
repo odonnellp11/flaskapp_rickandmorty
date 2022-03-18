@@ -4,13 +4,14 @@
 <link rel="stylesheet" href="../static/css/gallery.css">
 {% endblock css %}
 
+    
+</div>
 {% block content %}
 <div class="container">
-    <div class="apigallerytittle, justify-content-center">Rick Sanchez</div>
-    {% for rick in ricks %}
-        <div class="call1"><img class="img_fluid" src="{{ricks[rick]}}" alt="{{rick}}"></div>
+    {% for i in range(9) %}
+    <div class="call{{i}}"><img class="img_fluid" src="{{ricks[i][1]}}" alt="{{ricks[1][0]}}"></div>
+    <div class="call{{i}}">{{ricks_name[i][1]}}</div>
     {% endfor %}
-
-    
+    <div class=" character-gallery">Citidel of Ricks </div>
 </div>
 {% endblock content %}

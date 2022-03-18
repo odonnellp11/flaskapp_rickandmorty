@@ -1,0 +1,18 @@
+{% extends 'components/layout.html'%}
+
+{% block css %}
+<link rel="stylesheet" href="../static/css/gallery.css">
+{% endblock css %}
+
+
+{% block content %}
+<div class="container">
+  {% for i in range(9) %}
+  <div class="call{{i}}"><img class="img_fluid" src="{{chars[i][1]}}" alt="{{chars[1][0]}}"></div>
+  <div class="call{{i}}">{{chars_name[i][1]}}</div>
+  {% endfor %}
+  
+<div class=" character-gallery">The other Idiots</div>
+</div>
+
+{% endblock content %}

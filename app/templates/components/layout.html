@@ -20,16 +20,17 @@
     </div>    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Rick & Morty World</a>
+          <a class="navbar-brand" href="{{ url_for('home')}}">Rick & Morty World</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Rick Sanchez</a>
-              <a class="nav-link" href="#">Morty Smith</a>
-              <a class="nav-link" href="#">Characters</a>
+              <a class="nav-link active" aria-current="page" href="{{ url_for('Ricks')}}">Citidel Of Ricks</a>
+              <a class="nav-link" href="{{ url_for('mortys')}}">Morty</a>
+              <a class="nav-link" href="{{ url_for('characters')}}">Characters</a>
+              <a class="nav-link" href="#">Fan Page</a>
+              <a class="nav-link" href="#">Login</a>
             </div>
           </div>
         </div>

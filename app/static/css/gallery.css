@@ -1,39 +1,92 @@
 .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 1em 1em;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". apigallerytittle ."
-      "c1 c2 c3"
-      "c4 c5 c6"
-      "c7 c8 c9";
-  }
-  
-  
-    
- 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "character-gallery character-gallery character-gallery"
+    "call0 call1 call2"
+    "call3 call4 call5"
+    "call6 call7 call8";
+}
+.call0 { 
+  grid-area: call0;
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique;
+  text-align: center; 
+}
 
-  .c1 { grid-area: c1; }
-  
-  .c2 { grid-area: c2; }
-  
-  .c3 { grid-area: c3; }
-  
-  .c4 { grid-area: c4; }
-  
-  .c5 { grid-area: c5; }
-  
-  .c6 { grid-area: c6; }
-  
-  .c7 { grid-area: c7; }
-  
-  .c8 { grid-area: c8; }
-  
-  .c9 { grid-area: c9; }
-  
-  .apigallerytittle { 
-    grid-area: apigallerytittle;
-    text-align: center;
-   }
+.call1 { grid-area: call1;
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique;
+  text-align: center;
+}
+
+.call2 { grid-area: call2;  
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique;
+  text-align: center;
+  }
+
+.call3 { 
+  grid-area: call3;  
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique;
+  text-align: center;
+  }
+
+.call4 { 
+  grid-area: call4;  
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique; 
+  text-align: center;
+}
+
+.call5 { 
+  grid-area: call5;
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique; 
+  text-align: center; 
+}
+
+.call6 { 
+  grid-area: call6;
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique; 
+  text-align: center; 
+}
+
+.call7 { 
+  grid-area: call7;
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique; 
+  text-align: center; 
+}
+
+.call8 { 
+  grid-area: call8;
+  color: rgb(228, 7, 228);
+  font-size: xx-large;
+  font-style: oblique; 
+  text-align: center; 
+}
+
+
+
+.character-gallery {
+  font-family: fantasy;
+  font-size: xx-large;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  grid-area: character-gallery;
+}
