@@ -1,7 +1,7 @@
 import requests as r
 from app import app
 from flask import render_template
-from .services import char_image
+from .services import get_ricks_image 
 
 
 
@@ -20,9 +20,9 @@ def characters():
 
 @app.route('/rick')
 def Ricks():
-    chars = char_image()
-    print(chars)
-    return render_template('/rick.html', chars=chars)
+    ricks = get_ricks_image()
+    print(len(ricks))
+    return render_template('/rick.html', ricks=ricks)
 
 @app.route('/morty')
 def mortys():

@@ -1,14 +1,17 @@
 {% extends 'components/layout.html' %}
 
-{% block css %}
+{% block css%}
 <link rel="stylesheet" href="../static/css/gallery.css">
 {% endblock css %}
 
-{%  block content %}
+{% block content %}
+
 <div class="container">
-    {% for i in range(9) %}
-        <div class="c{{i}}"><img class="img-fluid" src="{{ chars[i][1] }}" alt="{{ chars[i][0]}}"></div>
+    <div class="apigallerytittle">Rick Sanchez</div>
+    {% for rick in ricks %}
+        <div class="call1"><img class="img_fluid" src="{{ricks[rick]}}" alt="{{rick}}"></div>
     {% endfor %}
-    <div class="api-gallery-tittle">Rick Sanchez</div>
+
+    
 </div>
 {% endblock content %}

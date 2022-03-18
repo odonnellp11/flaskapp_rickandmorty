@@ -2,18 +2,18 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
-    gap: 25px 25px;
+    gap: 1em 1em;
     grid-auto-flow: row;
     grid-template-areas:
-      ". api-gallery-tittle ."
-      "c0 c1 c2"
-      "c3 c4 c5"
-      "c6 c7 c8";
+      ". apigallerytittle ."
+      "c1 c2 c3"
+      "c4 c5 c6"
+      "c7 c8 c9";
   }
   
   
     
-  .c0 { grid-area: c0; }
+ 
 
   .c1 { grid-area: c1; }
   
@@ -31,9 +31,9 @@
   
   .c8 { grid-area: c8; }
   
-  .c0 { grid-area: c0; }
+  .c9 { grid-area: c9; }
   
-  .api-gallery-tittle { 
-    grid-area: api-gallery-tittle;
+  .apigallerytittle { 
+    grid-area: apigallerytittle;
     text-align: center;
    }
