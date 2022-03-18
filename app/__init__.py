@@ -12,3 +12,4 @@ app.config.from_object(Config)
 
 
 
+from . import routes

@@ -6,9 +6,9 @@
 
 {%  block content %}
 <div class="container">
-{% for i in range(9) %}
-    <div class="c{{i}}"><img class="img-fluid" src="{{ chars[i][1] }}" alt="{{ chars[i][0]}}"></div>
-{% endfor %}
+    {% for i in range(9) %}
+        <div class="c{{i}}"><img class="img-fluid" src="{{ chars[i][1] }}" alt="{{ chars[i][0]}}"></div>
+    {% endfor %}
     <div class="api-gallery-tittle">Rick Sanchez</div>
 </div>
 {% endblock content %}
