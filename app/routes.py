@@ -31,11 +31,17 @@ def Ricks():
     ricks_name = get_ricks_name()
     ricks = get_ricks_image()
     print(ricks)
-    return render_template('/rick.html', ricks=ricks, ricks_name=ricks_name)
+    return render_template('rick.html', ricks=ricks, ricks_name=ricks_name)
 
 @app.route('/morty')
 def mortys():
     mortys_name = get_mortys_name()
     mortys = get_mortys_image()
     print(mortys)
-    return render_template('/morty.html', mortys=mortys, mortys_name=mortys_name )
+    return render_template('morty.html', mortys=mortys, mortys_name=mortys_name )
+
+
+
+
+
+
