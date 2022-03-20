@@ -21,6 +21,13 @@
         {% if character is string %}
             <h3>There are no characters with that name {{ character }}.</h3>
         {% elif character %}
+        <div class="card-header">
+            character info:
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item ">ID:<span class="float-right">{{ Search[name] }}</span></li>
+            <li class="list-group-item ">{{name}}<span class="float-right">{{ Search[name] }}</span></li>     
+        </ul>                 #can add to list later
             <h1>{{character}}</h1>
         {% endif %}
     </div>
