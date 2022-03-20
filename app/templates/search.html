@@ -1,0 +1,28 @@
+{% extends 'components/layout.html' %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-6">
+        <form class="form-inline" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.charactername(class="mr-3 form-control", placeholder="Characters name")    "></i> )}}
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        {{ form.submit(class="btn btn-info") }}
+        </form>
+        <small id="charaterHelp" class="form-text text-muted">Submit the name of the character you want to View.</small>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8">
+        {% if character is string %}
+            <h3>There are no characters with that name {{ character }}.</h3>
+        {% elif character %}
+            <h1>{{character}}</h1>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

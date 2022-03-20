@@ -1,14 +1,13 @@
 import requests as r
 from app import app
-from flask import render_template
+from flask import render_template, request
 from .services import get_ricks_image 
 from .services import get_ricks_name
 from .services import get_mortys_image
 from .services import get_mortys_name
 from .services import get_chars_image
 from .services import get_chars_name
-
-
+from .forms import SearchForm
 
 
 
@@ -39,6 +38,18 @@ def mortys():
     mortys = get_mortys_image()
     print(mortys)
     return render_template('morty.html', mortys=mortys, mortys_name=mortys_name )
+
+@app.route('/search', methods=['GET', 'POST'])
+def char_search():
+    form = SearchForm()
+    if request.method == 'POST':
+        data = r.get('https://rickandmortyapi.com/api/character/{form.charactername.data}.json').json()
+        if data['results']['total'] != '0':
+            character = data['results'][0]['image']
+        else:
+            character = None
+        return render_template('search.html', form=form, character=character)
+    return render_template('search.html', form=form, character=None)
 
 
 

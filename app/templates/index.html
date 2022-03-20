@@ -1,12 +1,13 @@
 {% extends 'components/layout.html'%}
 
 {% block content %}
-<div class="col">
-    <h1>{{ headline }}</h1>
-    <dd>{{ description }}</dd>
+<div class="row justify-content-center">
+    <div class="col">
+        <h1>{{ headline }}</h1>
+        <dd>{{ description }}</dd>
+    </div>
+    <div class="col1">
+        <img class="img-fluid" src="https://i.guim.co.uk/img/media/b563ac5db4b4a4e1197c586bbca3edebca9173cd/0_12_3307_1985/master/3307.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=1e7782501ddde0a9803bed9791f4eea1" alt="rick&morty">
+    </div>
 </div>
-<div class="col1">
-    <img class="img-fluid" src="https://i.guim.co.uk/img/media/b563ac5db4b4a4e1197c586bbca3edebca9173cd/0_12_3307_1985/master/3307.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=1e7782501ddde0a9803bed9791f4eea1" alt="rick&morty">
-</div>
-
 {% endblock content %}
