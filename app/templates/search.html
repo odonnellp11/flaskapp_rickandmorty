@@ -7,12 +7,11 @@
 <div class="row justify-content-center">
     <div class="col-6">
         <form class="form-inline" method="POST">
-            {{ form.hidden_() }}
+            {{ form.hidden_tag() }}
             <div class="form-group">
-                {{ form.charactername(class="mr-3 form-control", placeholder="Characters name")    "></i> )}}
-        </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        {{ form.submit(class="btn btn-info") }}
+            {{ form.charactername(class="mr-3 form-control", placeholder="Characters name")}}
+            </div>
+            {{ form.submit(class="btn btn-info") }}
         </form>
         <small id="charaterHelp" class="form-text text-muted">Submit the name of the character you want to View.</small>
 </div>
