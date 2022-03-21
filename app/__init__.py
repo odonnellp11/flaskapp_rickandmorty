@@ -8,5 +8,4 @@ app.config.from_object(Config)
 app.register_blueprint(auth)
 
 
-
 from . import routes
